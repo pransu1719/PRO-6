@@ -1,7 +1,4 @@
-from datetime import datetime
-
-def journal_manager():
-    file_name = "journal.txt"
+import os
 
     while True:
         print("\nWelcome to Personal Journal Manager!")
