@@ -62,7 +62,7 @@ def display_menu():
                   "Are you sure you want to delete all entries? (yes/no): ")
                
 
-             if confirm.lower() == "yes":
+              if confirm.lower() == "yes":
                 open(file_name, "w").close()
                 print("All entries deleted.")
               else:
