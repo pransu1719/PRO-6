@@ -68,7 +68,7 @@ def display_menu():
            else:
                print("Deletion cancelled.")
 
-      elif choice == 5:
+     elif choice == 5:
            print("Goodbye!")
            break
 
