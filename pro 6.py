@@ -1,5 +1,6 @@
-import os
-
+from datetime import datetime import os
+filename ="journal.txt"
+def display_menu():
     while True:
         print("\nWelcome to Personal Journal Manager!")
         print("Please select an option")
