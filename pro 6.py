@@ -43,7 +43,7 @@ def display_menu():
             keyword = input("Enter keyword to search: ")
 
             try:
-            with open(file_name, "r") as file:
+                 with open(file_name, "r") as file:
                  found = False
 
                  for line in file:
