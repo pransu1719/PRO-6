@@ -51,18 +51,18 @@ def display_menu():
                             print(line.strip())
                             found = True
 
-                    if not found:
-                       print("No matching entries found.")
+                     if not found:
+                        print("No matching entries found.")
 
-             except FileNotFoundError:
+            except FileNotFoundError:
                  print("No journal file found.")
 
         elif choice == 4:
              confirm = input(
-               "Are you sure you want to delete all entries? (yes/no): ")
+                "Are you sure you want to delete all entries? (yes/no): ")
                
 
-            if confirm.lower() == "yes":
+             if confirm.lower() == "yes":
                open(file_name, "w").close()
                print("All entries deleted.")
             else:
