@@ -44,36 +44,36 @@ def display_menu():
 
             try:
                  with open(file_name, "r") as file:
-                 found = False
+                     found = False
 
-                 for line in file:
-            if keyword.lower() in line.lower():
-                    print(line.strip())
-                     found = True
+                    for line in file:
+                        if keyword.lower() in line.lower():
+                           print(line.strip())
+                           found = True
 
-            if not found:
-                 print("No matching entries found.")
+                   if not found:
+                       print("No matching entries found.")
 
-                except FileNotFoundError:
+             except FileNotFoundError:
                  print("No journal file found.")
 
-           elif choice == 4:
-                confirm = input(
-                "Are you sure you want to delete all entries? (yes/no): ")
+        elif choice == 4:
+             confirm = input(
+             "Are you sure you want to delete all entries? (yes/no): ")
                
 
-         if confirm.lower() == "yes":
-            open(file_name, "w").close()
-            print("All entries deleted.")
-         else:
-           print("Deletion cancelled.")
+            if confirm.lower() == "yes":
+               open(file_name, "w").close()
+               print("All entries deleted.")
+           else:
+              print("Deletion cancelled.")
 
-         elif choice == 5:
-              print("Goodbye!")
-              break
+      elif choice == 5:
+           print("Goodbye!")
+           break
 
-        else:
-            print("Invalid choice. Please select 1-5.")
+     else:
+        print("Invalid choice. Please select 1-5.")
 
 # Run the program
 
