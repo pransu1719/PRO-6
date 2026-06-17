@@ -1,4 +1,4 @@
-from datetime import datetime import os
+from datetime import datetime s
 filename ="journal.txt"
 def display_menu():
     while True:
