@@ -54,7 +54,7 @@ def display_menu():
                      if not found:
                         print("No matching entries found.")
 
-            except FileNotFoundError:
+        except FileNotFoundError:
                   print("No journal file found.")
 
          elif choice == 4:
