@@ -65,15 +65,15 @@ def display_menu():
               if confirm.lower() == "yes":
                 open(file_name, "w").close()
                 print("All entries deleted.")
-              else:
+               else:
                 print("Deletion cancelled.")
 
-        elif choice == 5:
-             print("Goodbye!")
-             break
+         elif choice == 5:
+              print("Goodbye!")
+              break
 
-        else:
-          print("Invalid choice. Please select 1-5.")
+         else:
+           print("Invalid choice. Please select 1-5.")
 
 # Run the program
 
