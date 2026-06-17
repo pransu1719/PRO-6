@@ -57,7 +57,7 @@ def display_menu():
              except FileNotFoundError:
                   print("No journal file found.")
 
-       elif choice == 4:
+    elif choice == 4:
             confirm = input(
                 "Are you sure you want to delete all entries? (yes/no): ")
                
